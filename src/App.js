@@ -1,10 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import TodoForm from './TodoForm';
 
 function App() {
   
+  const onInsert = () => {
+    console.log('😊😊😊');
+  }
+
   return (
     <div className="App">
+      <TodoForm onInsert={onInsert} />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
